@@ -13,40 +13,54 @@ The core of the repository is the **Randomized Maximum Likelihood (RML)** method
 
 ---
 
+## Repository Structure
+
+* `AEM_preproc.py`: Main preprocessing module managing `Survey` and `Data` classes.
+* `ProbEM.py`: Core inversion logic containing the `Sounding`, `Calibration`, and `RML` classes.
+* `libraries/`:
+    * `gex_parser.py`: Parser for SkyTEM system configuration files.
+    * `des_parser.py`: Parser for general AEM description files.
+
+---
+
 ## Quick Start: Stochastic Workflow
 
-1. System and Module Setup:
+### 1. System and Module Setup
 
-    import AEM_preproc
-    import ProbEM
-    import warnings
-    import logging
+```python
+import AEM_preproc
+import ProbEM
+import warnings
+import logging
 
-    Survey = AEM_preproc.Survey
-    Sounding = ProbEM.Sounding
+Survey = AEM_preproc.Survey
+Sounding = ProbEM.Sounding
 
-    # Initialize Survey (SkyTEM example)
-    survey = Survey()
-    survey.proc_gex('path/to/system.gex')
-    print("Modules reloaded.")
+# Initialize Survey (SkyTEM example)
+survey = Survey()
+survey.proc_gex('path/to/system.gex')
+print("Modules reloaded.")
+```
 
-2. Run Stochastic Inversion:
+### 2. Run Stochastic Inversion
 
-    # Re-instantiate sounding for the specific line and time
-    mock_sounding = Sounding(survey, mock_iline, mock_time, inv_thickness)
+```python
+# Re-instantiate sounding for the specific line and time
+mock_sounding = Sounding(survey, mock_iline, mock_time, inv_thickness)
 
-    # Suppress verbose Dask/Distributed logs
-    warnings.filterwarnings('ignore')
-    logging.getLogger("distributed").setLevel(logging.ERROR)
-    logging.getLogger("dask").setLevel(logging.ERROR)
+# Suppress verbose Dask/Distributed logs
+warnings.filterwarnings('ignore')
+logging.getLogger("distributed").setLevel(logging.ERROR)
+logging.getLogger("dask").setLevel(logging.ERROR)
 
-    # Generate realizations and execute
-    n_realizations = 10
-    mock_sounding.get_RML_reals(nreals=n_realizations)
+# Generate realizations and execute
+n_realizations = 10
+mock_sounding.get_RML_reals(nreals=n_realizations)
 
-    print(f"Running stochastic inversion with {n_realizations} realizations...")
-    mock_sounding.RML.run_local()
-    print("Stochastic inversion completed successfully.")
+print(f"Running stochastic inversion with {n_realizations} realizations...")
+mock_sounding.RML.run_local()
+print("Stochastic inversion completed successfully.")
+```
 
 ---
 
