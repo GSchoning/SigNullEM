@@ -101,11 +101,10 @@ This software was developed for the **Queensland Office of Groundwater Impact As
 
 ## References
 
-**ProbEM** is deeply indebted to the following frameworks and research:
+**ProbEM** builds on the the following frameworks and research:
 
 1. **Heagy, L. J., Cockett, R., Kang, S., Rosenkjaer, G. K., Heenan, L. J., & Oldenburg, D. W. (2017).** A framework for simulation and inversion in electromagnetics. *Computers & Geosciences*, 107, 1-19.
 2. **Blatter et al.** (e.g., *Geophysical Journal International*): For foundational work and inspiration regarding uncertainty quantification in electromagnetic inversion.
 3. **SimPEG:** [https://simpeg.xyz/](https://simpeg.xyz/)
 
----
-*Developed for the Queensland Office of Groundwater Impact Assessment (OGIA).*
+
