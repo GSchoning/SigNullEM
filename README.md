@@ -1,6 +1,6 @@
-# ProbEM: Stochastic Airborne Electromagnetic Inversion
+# SignalEM: Stochastic Airborne Electromagnetic Inversion
 
-**ProbEM** is a Python-based framework for the inversion of Airborne Electromagnetic (AEM) data. It is built upon the comprehensive simulation and inversion framework provided by **SimPEG** (Heagy et al., 2017) to provide both deterministic and stochastic interpretation of subsurface electrical conductivity.
+**SignalEM** is a Python-based framework for the inversion of Airborne Electromagnetic (AEM) data. It is built upon the comprehensive simulation and inversion framework provided by **SimPEG** (Heagy et al., 2017) to provide both deterministic and stochastic interpretation of subsurface electrical conductivity.
 
 The core of the repository is the **Randomized Maximum Likelihood (RML)** method, which acts as a "signal discovery device" to reveal sharp stratigraphic features and connectivity often smoothed out by conventional regularized inversions.
 
@@ -29,7 +29,7 @@ The core of the repository is the **Randomized Maximum Likelihood (RML)** method
 
 ```python
 import AEM_preproc
-import ProbEM
+import SignalEM
 import warnings
 import logging
 
