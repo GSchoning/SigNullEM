@@ -13,16 +13,6 @@ The core of the repository is the **Randomized Maximum Likelihood (RML)** method
 
 ---
 
-## Repository Structure
-
-* `AEM_preproc.py`: Main preprocessing module managing `Survey` and `Data` classes.
-* `ProbEM.py`: Core inversion logic containing the `Sounding`, `Calibration`, and `RML` classes.
-* `libraries/`:
-    * `gex_parser.py`: Parser for SkyTEM system configuration files.
-    * `des_parser.py`: Parser for general AEM description files.
-
----
-
 ## Quick Start: Stochastic Workflow
 
 1. System and Module Setup:
@@ -65,7 +55,7 @@ The core of the repository is the **Randomized Maximum Likelihood (RML)** method
 ### 1. Layer Probability and Feature Discovery
 Conventional regularized inversions provide Maximum A Posteriori (MAP) estimates of electrical conductivity (EC). While stable, these results often provide "subdued reflections" of conductivity contrasts, making it difficult to recognize offsets in aquitard connectedness.
 
-**ProbEM** employs a feature-seeking methodology based on the Randomized Maximum Likelihood (RML) method:
+**ProbEM** employs a feature-seeking methodology based on the Randomized Maximum Likelihood (RML) method. The approach to **uncertainty quantification** implemented here is inspired by the work of **Blatter et al.**, utilizing stochastic ensembles to derive probabilistic descriptors of subsurface structure:
 * **EC Peaks/Troughs:** The ensemble of models is used to calculate the probability of a peak or trough of EC with depth.
 * **Sharpness Filtering:** This acts as a high-amplitude sharpness filter, magnifying sub-horizontal EC contrasts rather than just EC magnitude, rendering features visible even under conductive cover.
 
@@ -97,8 +87,11 @@ This software was developed for the **Queensland Office of Groundwater Impact As
 
 ## References
 
+**ProbEM** is deeply indebted to the following frameworks and research:
+
 1. **Heagy, L. J., Cockett, R., Kang, S., Rosenkjaer, G. K., Heenan, L. J., & Oldenburg, D. W. (2017).** A framework for simulation and inversion in electromagnetics. *Computers & Geosciences*, 107, 1-19.
-2. **SimPEG:** [https://simpeg.xyz/](https://simpeg.xyz/)
+2. **Blatter et al.** (e.g., *Geophysical Journal International*): For foundational work and inspiration regarding uncertainty quantification in electromagnetic inversion.
+3. **SimPEG:** [https://simpeg.xyz/](https://simpeg.xyz/)
 
 ---
 *Developed for the Queensland Office of Groundwater Impact Assessment (OGIA).*
