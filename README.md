@@ -1,5 +1,5 @@
 # SigNullEM: Stochastic Airborne Electromagnetic Inversion
-<img width="2816" height="1536" alt="Gemini_Generated_Image_i3mcfli3mcfli3mc" src="https://github.com/user-attachments/assets/863f288e-089e-4962-b4a3-a1ed0f234a04" />
+<img width="2816" height="1374" alt="signullEM" src="https://github.com/user-attachments/assets/c236f777-aeea-43dc-84a5-a47b847d7fe0" />
 
 
 
