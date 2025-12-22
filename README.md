@@ -144,8 +144,12 @@ This software was developed for the **Queensland Office of Groundwater Impact As
 
 ## References
 
-**SigNullEM** builds on the following frameworks and research:
+**SigNullEM** is the accompanying code for the following research (currently in preparation):
 
-1.  **Heagy, L. J., Cockett, R., Kang, S., Rosenkjaer, G. K., Heenan, L. J., & Oldenburg, D. W. (2017).** A framework for simulation and inversion in electromagnetics. *Computers & Geosciences*, 107, 1-19.
-2.  **Blatter et al.** (e.g., *Geophysical Journal International*): For foundational work and inspiration regarding uncertainty quantification in electromagnetic inversion.
-3.  **SimPEG:** [https://simpeg.xyz/](https://simpeg.xyz/)
+1.  **Schöning, G., Doherty, J., Pandey, S., & Hy, A. B. X. (2025).** *A stochastic framework for signal discovery and uncertainty quantification in Airborne Electromagnetic inversion.* (Paper in preparation).
+
+It also builds upon the following foundational frameworks:
+
+2.  **Heagy, L. J., Cockett, R., Kang, S., Rosenkjaer, G. K., Heenan, L. J., & Oldenburg, D. W. (2017).** A framework for simulation and inversion in electromagnetics. *Computers & Geosciences*, 107, 1-19.
+3.  **Blatter, D., Key, K., & Ray, A. (2018).** Two-dimensional Bayesian inversion of electromagnetic data with a trans-dimensional Gaussian process prior. *Geophysical Journal International*.
+4.  **SimPEG:** [https://simpeg.xyz/](https://simpeg.xyz/)
