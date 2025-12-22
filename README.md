@@ -29,20 +29,6 @@ The core philosophy of SigNullEM is **Randomized Maximum Likelihood (RML)**. By 
 
 ## Default Configuration
 
-### Layer Discretization
-SigNullEM uses a geometric expansion for layer thicknesses to match the loss of electromagnetic resolution at depth.
-
-| Layer # | Thickness (m) | Depth to Top (m) |
-| :--- | :--- | :--- |
-| 1 | 2.0 | 0.0 |
-| 2 | 2.2 | 2.0 |
-| 3 | 2.4 | 4.2 |
-| ... | ... | ... |
-| 15 | 6.7 | 52.2 |
-| ... | ... | ... |
-| 29 | 22.6 | 227.4 |
-| 30 | ∞ | 250.0 |
-
 #### Python Definition
 ```python
 import numpy as np
