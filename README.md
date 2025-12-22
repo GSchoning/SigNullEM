@@ -1,6 +1,5 @@
 # SigNullEM: Stochastic Airborne Electromagnetic Inversion
-<img width="2816" height="1374" alt="signullEM" src="https://github.com/user-attachments/assets/c236f777-aeea-43dc-84a5-a47b847d7fe0" />
-
+![Uploading signullEM2.PNG…]()
 
 
 [![Python 3.9+](https://img.shields.io/badge/python-3.9+-blue.svg)](https://www.python.org/downloads/)
